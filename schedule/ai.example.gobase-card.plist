@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- Runs a GoBase card script every hour. Replace the two paths, rename the file and the Label to match,
+     then follow schedule/README.md. -->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>ai.example.gobase-card</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/bin/python3</string>
+        <string>/Users/YOU/gobase-cards/bills-due/bills_due.py</string>
+    </array>
+    <key>StartInterval</key>
+    <integer>3600</integer>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>StandardErrorPath</key>
+    <string>/tmp/ai.example.gobase-card.log</string>
+</dict>
+</plist>
